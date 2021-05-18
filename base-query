@@ -1,0 +1,1 @@
+SELECT units.*, ranks.`desirability_rank` FROM wp_afs_units as units LEFT JOIN wp_afs_units_ranks AS ranks ON units.`UnitID` = ranks.`UnitID` WHERE units.sLocationCode='L012' AND units.bRented=0 AND units.bRentable=1 AND units.bWaitingListReserved=0 AND units.dcWidth = '5.0000' AND units.dcLength = '10.0000'
